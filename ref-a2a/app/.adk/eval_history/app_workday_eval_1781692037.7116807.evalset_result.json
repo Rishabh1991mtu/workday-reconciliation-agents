@@ -1,0 +1,1650 @@
+{
+  "eval_set_result_id": "app_workday_eval_1781692037.7116807",
+  "eval_set_result_name": "app_workday_eval_1781692037.7116807",
+  "eval_set_id": "workday_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "workday_eval",
+      "eval_set_id": "workday_eval",
+      "eval_id": "afternoon_tea_reconcile",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8,
+            "judgeModelOptions": {
+              "judgeModel": "gemini-3-flash-preview",
+              "numSamples": 1
+            },
+            "rubrics": [
+              {
+                "rubricId": "relevance",
+                "rubricContent": {
+                  "textProperty": "The response directly addresses the user's query."
+                }
+              },
+              {
+                "rubricId": "helpfulness",
+                "rubricContent": {
+                  "textProperty": "The response is helpful and provides useful information."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "relevance",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "helpfulness",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-d75c2f7e-ed90-43cb-baff-48663a2029ae",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Run my afternoon tea reconciliation report.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Here is your Afternoon Tea reconciliation report for today. I've scanned your activity across Slack, Zoom, and Gmail to surface where things stand.\n\n### 🎾 Ball in Your Court\nThese are items where action is clearly expected from you:\n\n*   **Verify `routing_eval.json` threshold**\n    *   **Source:** Mentioned in both today’s Zoom transcript and Slack thread.\n    *   **Confidence:** High\n\n### 📬 Pending Follow-ups\nYou have outgoing requests that haven't received a response yet. You might want to nudge these:\n\n*   **DevSecOps: Firewall Whitelist**\n    *   **Status:** Pending for 3 days.\n    *   **Draft Reminder:** *\"Hi team, just following up on the firewall whitelist request I sent earlier this week. Any updates?\"*\n\n### ⏳ Waiting On Others\n*   **Customer Security Signoff:** Your email indicates we are currently waiting on the customer for signoff before deployment can proceed.\n\nWould you like me to send any of these follow-ups or add the task to your list for tomorrow morning?",
+                  "thought": null,
+                  "thought_signature": "AY89a1_Z0vB_pEhrHpzinfG26XLOa0A--VcbCONYLI1hKiF_1chRplKnGlBMAvdLEhig8Z3vDDw_cVCfOz9naapPMn4Jk4f7Ol83MAd2jfSX3o17S0C5GYUbHCjfr-l46Ho_3uhfEkRphavCCIAW9lE-cS6XHn1zQ_2gCtoZU0YGhOj3pJXo1eQZEAhE3_n_65y0eG9hyqvykN5ATZNCm5oc9D9ZL4LtSX8PoBbMSl28mesX4E49wCk6EU8aetziCBxw97_9xktYmFstAPh6_K0P1ATe88ucFQDZEPf1aTjvIysLhbiRoHESscw42CXZ6AeurfYPp1XwG2EBLmFifqNsdgwnX6Wwo_larUhhMpwP0tS5FGLajxUvnbTZWIABVF6pmtBDnu27u2-9nfKI7kLAy01eMaUjvK-M1z6c2LJXBdgkDDrAxEXC6rNYO3ElKhZTZfG6KN7qCXHcUzf4OM9tRdmIROZu7wfAQ8cQU2nG017shOz2whM56IyOMsEHhsKWgcg-prpnwNlyBdwZwZ0_bJGnkgfk",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-cd69a5a0-6907-48a8-86cb-9951161b03a4",
+                          "args": {
+                            "agent_name": "afternoon_tea_agent"
+                          },
+                          "name": "transfer_to_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a1_JYQiUuCe1xY-124gneNdJbjEQXIaRjabVQZ3Snyah-f89NaT88FTTBeERj9uQL5UGlgiaZnAv85KtEKTgjCueLFs51jKepzqfdDrs0TiKAsR_rybCrZEWuz6QAgIyToJdCeUjtrMBBvp_o_yCQVktGw4y7DL8iOsZLqGjcZMuhDsCF1OnbmdrqeEDmyRancXHLH4202TfyNHksCQQd6NFqAwZcc7fwnSGz9U3nI7zZXii_6M24wsnNYcMw-DX5g7inKkBJmDHXwps2y_5GT9QtwAdlOqT6UlsLzLnCDTCyySnLt5iDuTWzaAmP7j1dBKIppMFtK1xfW531_uloG1iVle6CI6ApQwff-y-ToMXd4U3-G5tj8JL47C3qmSGsd3BnLM7r6UMyjT5iW95J6TAK0NUhfRWA6lLYxNkmzf0F7dtM1fXK4ysrdZEU-bFKhM-n4j9dNHyWxKmrWkYZN0Xqb3CnZy-0pPAs-fNf4LZgCaj8UFFMfQrLophde_2rv88NGsgQe8GewHZAxKKIR721x8PZSp5VHL_JUkgugRqqQrPG-YatfDP8uZMTQT-yKELH9BsRUikHv2v6emx-chdgMRwPFQy33xJaer1PNP4rpwQ3i9TdO7uuaXkMIzT1rvpQIV4jPGpZ1fT8YftLRyVXPQZIpIS",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-cd69a5a0-6907-48a8-86cb-9951161b03a4",
+                          "name": "transfer_to_agent",
+                          "response": {
+                            "result": null
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "afternoon_tea_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-ec6faba8-3d48-4793-913d-9c1ffd5b6945",
+                          "args": {
+                            "timeframe": "today"
+                          },
+                          "name": "scan_collaboration_activity",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a19RnhKZGbAjTtiw5e_UZqpjXUeFSzMK8VUYU3O3kS-PxoD28yzglYiUMvlOw6fecD0M-KVdAoPm64BOpsgkSaz-4E-ozxYIClg0PwKdhqsEuPYTFdty29n-jk_nTooeybKCVtuAD8QsDAcmCzIQNyORxvrJNhyHG6vC4ZDIVLY3q6tfmevBL2eVzkLKh2PxZSq9yP7LnJ9PlpoZGxS-o06t_cHMkzSYvnX5FEdqUFbKOpb3IMlBmSUPdPgrX3uUK8h1FWjSZ6E9s_98RQDsZhMtRUsIEa-1GN89cZg99bThLc9tyDXdMEYE-S3anZZ65HKQnSO9tPLQpvvlu1f5LRtjC9qfPwcSLnBhlKYA1yhbnyfxe5ZI7qJB7bY0wwNP949_SF_B5EhoY7b2Rnz8UXkESqiXediTjySBYNYmaUVB1TPTuTHUNMCPpjzzdNv6Xu9cE42fb_xa3jMik6DukuVE_gIjsjmLUa_x1gC0IJZ6RIcG5Njhm68Q1Q2iUEaEhSkkyNCIaU-k5pWzXel6N7KuyW-BWa-_lijBYWZ3VY6pEPS4UZkrdhl13vtt-OvgSy4EMNP5odDAuFkRjsBOiP1x6Vmb8-S4DQVSTMzSACrJeNTMtAjXZQcF64SCXc6O87brPQoe-NuVn5WE7Zu1q10rjt2kOBFTvRyYz8A_7Yvn2JZIeuY3FU-IeToXnik2-jivjd8iG0u5YKhMLcIL0A==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "afternoon_tea_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-ec6faba8-3d48-4793-913d-9c1ffd5b6945",
+                          "name": "scan_collaboration_activity",
+                          "response": {
+                            "status": "success",
+                            "signals": [
+                              {
+                                "source": "Zoom Transcript",
+                                "content": "Rishabh to verify routing_eval.json threshold",
+                                "owner": "Rishabh",
+                                "confidence": "high"
+                              },
+                              {
+                                "source": "Slack Thread",
+                                "content": "Verify routing_eval.json threshold",
+                                "owner": "Rishabh",
+                                "confidence": "high"
+                              },
+                              {
+                                "source": "Gmail",
+                                "content": "Waiting on customer security signoff before deployment",
+                                "owner": "Customer",
+                                "confidence": "low"
+                              },
+                              {
+                                "source": "Gmail Outbound",
+                                "content": "Asked DevSecOps for firewall whitelist 3 days ago",
+                                "owner": "DevSecOps",
+                                "pending_response": true
+                              }
+                            ]
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "afternoon_tea_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-5c84eeda-523b-4608-9ee5-4238c1cf1cae",
+                          "args": {
+                            "raw_tasks": [
+                              {
+                                "content": "Rishabh to verify routing_eval.json threshold",
+                                "source": "Zoom Transcript",
+                                "owner": "Rishabh",
+                                "confidence": "high"
+                              },
+                              {
+                                "confidence": "high",
+                                "owner": "Rishabh",
+                                "content": "Verify routing_eval.json threshold",
+                                "source": "Slack Thread"
+                              },
+                              {
+                                "content": "Waiting on customer security signoff before deployment",
+                                "source": "Gmail",
+                                "owner": "Customer",
+                                "confidence": "low"
+                              },
+                              {
+                                "content": "Asked DevSecOps for firewall whitelist 3 days ago",
+                                "source": "Gmail Outbound",
+                                "owner": "DevSecOps",
+                                "pending_response": true
+                              }
+                            ]
+                          },
+                          "name": "filter_ball_in_court_tasks",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a1-uYOyUuiACE9v-sZqWNrfATAIo02YHHcEiY3T5Z4SkamjX-FZ3H_xl-j8ZgCL2KdI2mYYvJZJxsV2_3eA8VYhAK6boEvqpZL7yfWbzhX6SDRknJtxrAaNSko5EgB6w1E0pt8wBccbxfWUH4-1_d-WwRcJgjwSqGpl97rH7UFxzAKI9qOfLSVSeDH6vKg==",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "afternoon_tea_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-5c84eeda-523b-4608-9ee5-4238c1cf1cae",
+                          "name": "filter_ball_in_court_tasks",
+                          "response": {
+                            "status": "success",
+                            "ball_in_court": [
+                              {
+                                "task_id": "t1",
+                                "title": "Verify routing_eval.json threshold",
+                                "sources": [
+                                  "Zoom Transcript",
+                                  "Slack Thread"
+                                ],
+                                "ownership": "user",
+                                "confidence": "high"
+                              }
+                            ],
+                            "follow_ups_needed": [
+                              {
+                                "request_id": "f1",
+                                "target": "DevSecOps",
+                                "topic": "firewall whitelist",
+                                "days_pending": 3,
+                                "suggested_reminder": "Following up on the firewall whitelist request sent earlier this week."
+                              }
+                            ]
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1781692023.5050204,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You coordinate the workday agent lifecycle. Route morning prep requests to morning_coffee_agent and afternoon reconciliation requests to afternoon_tea_agent.\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"Workday reconciliation coordinator pairing Morning Coffee and Afternoon Tea moments.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: morning_coffee_agent\nAgent description: An early-morning planning agent that generates a scannable Daily Prep Brief from calendar events and recent work.\n\n\nAgent name: afternoon_tea_agent\nAgent description: A late-day action review agent that scans collaboration tools to surface unresolved work and unanswered follow-ups.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`afternoon_tea_agent`, `morning_coffee_agent`.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "morning_coffee_agent",
+                                  "afternoon_tea_agent"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "NULL"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                },
+                "afternoon_tea_agent": {
+                  "name": "afternoon_tea_agent",
+                  "instructions": "You are Afternoon Tea, a late-day action review agent designed to close out the workday.\n1. Reference any previous morning prep brief from state if available.\n2. Scan emails, Slack threads, and meeting transcripts using scan_collaboration_activity.\n3. Filter aggressively for ball-in-court ownership and deduplicate tasks using filter_ball_in_court_tasks.\n4. Separate high-confidence items from ambiguous ones and draft reminders for unanswered follow-ups.\n\nYou are an agent. Your internal name is \"afternoon_tea_agent\". The description about you is \"A late-day action review agent that scans collaboration tools to surface unresolved work and unanswered follow-ups.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: root_agent\nAgent description: Workday reconciliation coordinator pairing Morning Coffee and Afternoon Tea moments.\n\n\nAgent name: morning_coffee_agent\nAgent description: An early-morning planning agent that generates a scannable Daily Prep Brief from calendar events and recent work.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`morning_coffee_agent`, `root_agent`.\n\nIf neither you nor the other agents are best for the question, transfer to your parent agent root_agent.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "root_agent",
+                                  "morning_coffee_agent"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "NULL"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Scans recent calls, Slack conversations, emails, and meeting transcripts for potential action items.\n\nArgs:\n    timeframe: The scan window (e.g., 'afternoon' or 'today').\n\nReturns:\n    A dictionary containing raw action signals from collaboration tools.\n",
+                          "name": "scan_collaboration_activity",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "timeframe": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "timeframe"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Aggressively filters action items for user ownership and deduplicates overlapping cross-platform items.\n\nArgs:\n    raw_tasks: List of raw task candidate dictionaries.\n\nReturns:\n    A dictionary containing deduplicated, ball-in-court tasks requiring user follow-up.\n",
+                          "name": "filter_ball_in_court_tasks",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "raw_tasks": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": {
+                                  "additional_properties": null,
+                                  "defs": null,
+                                  "ref": null,
+                                  "any_of": null,
+                                  "default": null,
+                                  "description": null,
+                                  "enum": null,
+                                  "example": null,
+                                  "format": null,
+                                  "items": null,
+                                  "max_items": null,
+                                  "max_length": null,
+                                  "max_properties": null,
+                                  "maximum": null,
+                                  "min_items": null,
+                                  "min_length": null,
+                                  "min_properties": null,
+                                  "minimum": null,
+                                  "nullable": null,
+                                  "pattern": null,
+                                  "properties": null,
+                                  "property_ordering": null,
+                                  "required": null,
+                                  "title": null,
+                                  "type": "OBJECT"
+                                },
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "ARRAY"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "raw_tasks"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "inv_afternoon",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Run my afternoon tea reconciliation report.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": null,
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8,
+                "judgeModelOptions": {
+                  "judgeModel": "gemini-3-flash-preview",
+                  "numSamples": 1
+                },
+                "rubrics": [
+                  {
+                    "rubricId": "relevance",
+                    "rubricContent": {
+                      "textProperty": "The response directly addresses the user's query."
+                    }
+                  },
+                  {
+                    "rubricId": "helpfulness",
+                    "rubricContent": {
+                      "textProperty": "The response is helpful and provides useful information."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "relevance",
+                    "rationale": "The final answer presents a \"reconciliation report\" based on the data retrieved from the tool calls, specifically mentioning the \"routing_eval.json\" task and the DevSecOps follow-up found in the evidence.",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "helpfulness",
+                    "rationale": "The final answer translates the technical tool outputs into a readable report for the user, categorizing tasks into \"Ball in Your Court\" and \"Pending Follow-ups,\" and even provides a draft reminder for the user to use. This provides clear value and useful information to the user.",
+                    "score": 1.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___1e8d6d81-29a5-47c3-892b-0a1a865852fe",
+      "session_details": {
+        "id": "___eval___session___1e8d6d81-29a5-47c3-892b-0a1a865852fe",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "34b5019e-12b8-4e7c-8aea-aaba067c343e",
+          "afternoon_reconciliation_report": "Here is your Afternoon Tea reconciliation report for today. I've scanned your activity across Slack, Zoom, and Gmail to surface where things stand.\n\n### 🎾 Ball in Your Court\nThese are items where action is clearly expected from you:\n\n*   **Verify `routing_eval.json` threshold**\n    *   **Source:** Mentioned in both today’s Zoom transcript and Slack thread.\n    *   **Confidence:** High\n\n### 📬 Pending Follow-ups\nYou have outgoing requests that haven't received a response yet. You might want to nudge these:\n\n*   **DevSecOps: Firewall Whitelist**\n    *   **Status:** Pending for 3 days.\n    *   **Draft Reminder:** *\"Hi team, just following up on the firewall whitelist request I sent earlier this week. Any updates?\"*\n\n### ⏳ Waiting On Others\n*   **Customer Security Signoff:** Your email indicates we are currently waiting on the customer for signoff before deployment can proceed.\n\nWould you like me to send any of these follow-ups or add the task to your list for tomorrow morning?"
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Run my afternoon tea reconciliation report.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d75c2f7e-ed90-43cb-baff-48663a2029ae",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "fcfeed7d-176a-4618-84f5-a2e275ac9c28",
+            "timestamp": 1781692021.4697032
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-cd69a5a0-6907-48a8-86cb-9951161b03a4",
+                    "args": {
+                      "agent_name": "afternoon_tea_agent"
+                    },
+                    "name": "transfer_to_agent",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a1_JYQiUuCe1xY-124gneNdJbjEQXIaRjabVQZ3Snyah-f89NaT88FTTBeERj9uQL5UGlgiaZnAv85KtEKTgjCueLFs51jKepzqfdDrs0TiKAsR_rybCrZEWuz6QAgIyToJdCeUjtrMBBvp_o_yCQVktGw4y7DL8iOsZLqGjcZMuhDsCF1OnbmdrqeEDmyRancXHLH4202TfyNHksCQQd6NFqAwZcc7fwnSGz9U3nI7zZXii_6M24wsnNYcMw-DX5g7inKkBJmDHXwps2y_5GT9QtwAdlOqT6UlsLzLnCDTCyySnLt5iDuTWzaAmP7j1dBKIppMFtK1xfW531_uloG1iVle6CI6ApQwff-y-ToMXd4U3-G5tj8JL47C3qmSGsd3BnLM7r6UMyjT5iW95J6TAK0NUhfRWA6lLYxNkmzf0F7dtM1fXK4ysrdZEU-bFKhM-n4j9dNHyWxKmrWkYZN0Xqb3CnZy-0pPAs-fNf4LZgCaj8UFFMfQrLophde_2rv88NGsgQe8GewHZAxKKIR721x8PZSp5VHL_JUkgugRqqQrPG-YatfDP8uZMTQT-yKELH9BsRUikHv2v6emx-chdgMRwPFQy33xJaer1PNP4rpwQ3i9TdO7uuaXkMIzT1rvpQIV4jPGpZ1fT8YftLRyVXPQZIpIS",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "8d75b38a-ea9b-462a-812b-993d0fc188aa"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 25,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 25
+                }
+              ],
+              "prompt_token_count": 393,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 393
+                }
+              ],
+              "thoughts_token_count": 110,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 528,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d75c2f7e-ed90-43cb-baff-48663a2029ae",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "8d75b38a-ea9b-462a-812b-993d0fc188aa"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "cc0b2753-d39c-4c9d-b215-9eb52f6e5c6e",
+            "timestamp": 1781692021.4712303
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-cd69a5a0-6907-48a8-86cb-9951161b03a4",
+                    "name": "transfer_to_agent",
+                    "response": {
+                      "result": null
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d75c2f7e-ed90-43cb-baff-48663a2029ae",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": "afternoon_tea_agent",
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "23f633f2-abcc-4b08-87f6-acacb4898cd7",
+            "timestamp": 1781692023.505292
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-ec6faba8-3d48-4793-913d-9c1ffd5b6945",
+                    "args": {
+                      "timeframe": "today"
+                    },
+                    "name": "scan_collaboration_activity",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a19RnhKZGbAjTtiw5e_UZqpjXUeFSzMK8VUYU3O3kS-PxoD28yzglYiUMvlOw6fecD0M-KVdAoPm64BOpsgkSaz-4E-ozxYIClg0PwKdhqsEuPYTFdty29n-jk_nTooeybKCVtuAD8QsDAcmCzIQNyORxvrJNhyHG6vC4ZDIVLY3q6tfmevBL2eVzkLKh2PxZSq9yP7LnJ9PlpoZGxS-o06t_cHMkzSYvnX5FEdqUFbKOpb3IMlBmSUPdPgrX3uUK8h1FWjSZ6E9s_98RQDsZhMtRUsIEa-1GN89cZg99bThLc9tyDXdMEYE-S3anZZ65HKQnSO9tPLQpvvlu1f5LRtjC9qfPwcSLnBhlKYA1yhbnyfxe5ZI7qJB7bY0wwNP949_SF_B5EhoY7b2Rnz8UXkESqiXediTjySBYNYmaUVB1TPTuTHUNMCPpjzzdNv6Xu9cE42fb_xa3jMik6DukuVE_gIjsjmLUa_x1gC0IJZ6RIcG5Njhm68Q1Q2iUEaEhSkkyNCIaU-k5pWzXel6N7KuyW-BWa-_lijBYWZ3VY6pEPS4UZkrdhl13vtt-OvgSy4EMNP5odDAuFkRjsBOiP1x6Vmb8-S4DQVSTMzSACrJeNTMtAjXZQcF64SCXc6O87brPQoe-NuVn5WE7Zu1q10rjt2kOBFTvRyYz8A_7Yvn2JZIeuY3FU-IeToXnik2-jivjd8iG0u5YKhMLcIL0A==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "b3203fa5-e107-4b8b-baa5-f5b0da956b00"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 20,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 20
+                }
+              ],
+              "prompt_token_count": 712,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 712
+                }
+              ],
+              "thoughts_token_count": 122,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 854,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d75c2f7e-ed90-43cb-baff-48663a2029ae",
+            "author": "afternoon_tea_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "b3203fa5-e107-4b8b-baa5-f5b0da956b00"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "a5f87443-021e-46bf-8321-1049e8824e91",
+            "timestamp": 1781692023.507139
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-ec6faba8-3d48-4793-913d-9c1ffd5b6945",
+                    "name": "scan_collaboration_activity",
+                    "response": {
+                      "status": "success",
+                      "signals": [
+                        {
+                          "source": "Zoom Transcript",
+                          "content": "Rishabh to verify routing_eval.json threshold",
+                          "owner": "Rishabh",
+                          "confidence": "high"
+                        },
+                        {
+                          "source": "Slack Thread",
+                          "content": "Verify routing_eval.json threshold",
+                          "owner": "Rishabh",
+                          "confidence": "high"
+                        },
+                        {
+                          "source": "Gmail",
+                          "content": "Waiting on customer security signoff before deployment",
+                          "owner": "Customer",
+                          "confidence": "low"
+                        },
+                        {
+                          "source": "Gmail Outbound",
+                          "content": "Asked DevSecOps for firewall whitelist 3 days ago",
+                          "owner": "DevSecOps",
+                          "pending_response": true
+                        }
+                      ]
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d75c2f7e-ed90-43cb-baff-48663a2029ae",
+            "author": "afternoon_tea_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "cfa7afec-5e9e-495b-baab-351ced03a706",
+            "timestamp": 1781692025.5899951
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-5c84eeda-523b-4608-9ee5-4238c1cf1cae",
+                    "args": {
+                      "raw_tasks": [
+                        {
+                          "content": "Rishabh to verify routing_eval.json threshold",
+                          "source": "Zoom Transcript",
+                          "owner": "Rishabh",
+                          "confidence": "high"
+                        },
+                        {
+                          "confidence": "high",
+                          "owner": "Rishabh",
+                          "content": "Verify routing_eval.json threshold",
+                          "source": "Slack Thread"
+                        },
+                        {
+                          "content": "Waiting on customer security signoff before deployment",
+                          "source": "Gmail",
+                          "owner": "Customer",
+                          "confidence": "low"
+                        },
+                        {
+                          "content": "Asked DevSecOps for firewall whitelist 3 days ago",
+                          "source": "Gmail Outbound",
+                          "owner": "DevSecOps",
+                          "pending_response": true
+                        }
+                      ]
+                    },
+                    "name": "filter_ball_in_court_tasks",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a1-uYOyUuiACE9v-sZqWNrfATAIo02YHHcEiY3T5Z4SkamjX-FZ3H_xl-j8ZgCL2KdI2mYYvJZJxsV2_3eA8VYhAK6boEvqpZL7yfWbzhX6SDRknJtxrAaNSko5EgB6w1E0pt8wBccbxfWUH4-1_d-WwRcJgjwSqGpl97rH7UFxzAKI9qOfLSVSeDH6vKg==",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "210f2cd5-7eb4-468e-a330-876ae5866113"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 160,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 160
+                }
+              ],
+              "prompt_token_count": 937,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 937
+                }
+              ],
+              "thoughts_token_count": 24,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1121,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d75c2f7e-ed90-43cb-baff-48663a2029ae",
+            "author": "afternoon_tea_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "210f2cd5-7eb4-468e-a330-876ae5866113"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "24968898-424c-4e97-bd7d-94c7d80fa29a",
+            "timestamp": 1781692025.5918298
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-5c84eeda-523b-4608-9ee5-4238c1cf1cae",
+                    "name": "filter_ball_in_court_tasks",
+                    "response": {
+                      "status": "success",
+                      "ball_in_court": [
+                        {
+                          "task_id": "t1",
+                          "title": "Verify routing_eval.json threshold",
+                          "sources": [
+                            "Zoom Transcript",
+                            "Slack Thread"
+                          ],
+                          "ownership": "user",
+                          "confidence": "high"
+                        }
+                      ],
+                      "follow_ups_needed": [
+                        {
+                          "request_id": "f1",
+                          "target": "DevSecOps",
+                          "topic": "firewall whitelist",
+                          "days_pending": 3,
+                          "suggested_reminder": "Following up on the firewall whitelist request sent earlier this week."
+                        }
+                      ]
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d75c2f7e-ed90-43cb-baff-48663a2029ae",
+            "author": "afternoon_tea_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "5bff198a-7c84-40fe-b3ef-e8de674a79c1",
+            "timestamp": 1781692029.2597919
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Here is your Afternoon Tea reconciliation report for today. I've scanned your activity across Slack, Zoom, and Gmail to surface where things stand.\n\n### 🎾 Ball in Your Court\nThese are items where action is clearly expected from you:\n\n*   **Verify `routing_eval.json` threshold**\n    *   **Source:** Mentioned in both today’s Zoom transcript and Slack thread.\n    *   **Confidence:** High\n\n### 📬 Pending Follow-ups\nYou have outgoing requests that haven't received a response yet. You might want to nudge these:\n\n*   **DevSecOps: Firewall Whitelist**\n    *   **Status:** Pending for 3 days.\n    *   **Draft Reminder:** *\"Hi team, just following up on the firewall whitelist request I sent earlier this week. Any updates?\"*\n\n### ⏳ Waiting On Others\n*   **Customer Security Signoff:** Your email indicates we are currently waiting on the customer for signoff before deployment can proceed.\n\nWould you like me to send any of these follow-ups or add the task to your list for tomorrow morning?",
+                  "thought": null,
+                  "thought_signature": "AY89a1_Z0vB_pEhrHpzinfG26XLOa0A--VcbCONYLI1hKiF_1chRplKnGlBMAvdLEhig8Z3vDDw_cVCfOz9naapPMn4Jk4f7Ol83MAd2jfSX3o17S0C5GYUbHCjfr-l46Ho_3uhfEkRphavCCIAW9lE-cS6XHn1zQ_2gCtoZU0YGhOj3pJXo1eQZEAhE3_n_65y0eG9hyqvykN5ATZNCm5oc9D9ZL4LtSX8PoBbMSl28mesX4E49wCk6EU8aetziCBxw97_9xktYmFstAPh6_K0P1ATe88ucFQDZEPf1aTjvIysLhbiRoHESscw42CXZ6AeurfYPp1XwG2EBLmFifqNsdgwnX6Wwo_larUhhMpwP0tS5FGLajxUvnbTZWIABVF6pmtBDnu27u2-9nfKI7kLAy01eMaUjvK-M1z6c2LJXBdgkDDrAxEXC6rNYO3ElKhZTZfG6KN7qCXHcUzf4OM9tRdmIROZu7wfAQ8cQU2nG017shOz2whM56IyOMsEHhsKWgcg-prpnwNlyBdwZwZ0_bJGnkgfk",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "34b5019e-12b8-4e7c-8aea-aaba067c343e"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 232,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 232
+                }
+              ],
+              "prompt_token_count": 1134,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1134
+                }
+              ],
+              "thoughts_token_count": 78,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1444,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-d75c2f7e-ed90-43cb-baff-48663a2029ae",
+            "author": "afternoon_tea_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "34b5019e-12b8-4e7c-8aea-aaba067c343e",
+                "afternoon_reconciliation_report": "Here is your Afternoon Tea reconciliation report for today. I've scanned your activity across Slack, Zoom, and Gmail to surface where things stand.\n\n### 🎾 Ball in Your Court\nThese are items where action is clearly expected from you:\n\n*   **Verify `routing_eval.json` threshold**\n    *   **Source:** Mentioned in both today’s Zoom transcript and Slack thread.\n    *   **Confidence:** High\n\n### 📬 Pending Follow-ups\nYou have outgoing requests that haven't received a response yet. You might want to nudge these:\n\n*   **DevSecOps: Firewall Whitelist**\n    *   **Status:** Pending for 3 days.\n    *   **Draft Reminder:** *\"Hi team, just following up on the firewall whitelist request I sent earlier this week. Any updates?\"*\n\n### ⏳ Waiting On Others\n*   **Customer Security Signoff:** Your email indicates we are currently waiting on the customer for signoff before deployment can proceed.\n\nWould you like me to send any of these follow-ups or add the task to your list for tomorrow morning?"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "b0e49326-7ea3-453d-96e1-ddf75af512d3",
+            "timestamp": 1781692029.2618632
+          }
+        ],
+        "last_update_time": 1781692029.2618632
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1781692037.7116807
+}

@@ -1,0 +1,1757 @@
+{
+  "eval_set_result_id": "app_workday_eval_1781692037.714998",
+  "eval_set_result_name": "app_workday_eval_1781692037.714998",
+  "eval_set_id": "workday_eval",
+  "eval_case_results": [
+    {
+      "eval_set_file": "workday_eval",
+      "eval_set_id": "workday_eval",
+      "eval_id": "morning_coffee_prep",
+      "final_eval_status": 1,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "rubric_based_final_response_quality_v1",
+          "threshold": 0.8,
+          "criterion": {
+            "threshold": 0.8,
+            "judgeModelOptions": {
+              "judgeModel": "gemini-3-flash-preview",
+              "numSamples": 1
+            },
+            "rubrics": [
+              {
+                "rubricId": "relevance",
+                "rubricContent": {
+                  "textProperty": "The response directly addresses the user's query."
+                }
+              },
+              {
+                "rubricId": "helpfulness",
+                "rubricContent": {
+                  "textProperty": "The response is helpful and provides useful information."
+                }
+              }
+            ]
+          },
+          "custom_function_path": null,
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": [
+              {
+                "rubric_id": "relevance",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              },
+              {
+                "rubric_id": "helpfulness",
+                "rationale": "This is an aggregated score derived from individual entries. Please refer to individual entries in each invocation for actual rationale from the model.",
+                "score": 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-de084e3a-d238-4c8c-a395-0cb1054b5c4e",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Run my morning coffee prep brief.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "### ☕ Daily Prep Brief - Jan 24\n\n#### **🎯 Top Priorities**\n*   **Project Alpha** (High Urgency)\n    *   *Status:* 14 recent updates.\n    *   *Deadline:* **Today, 5:00 PM.**\n*   **Portal Migration** (Medium Urgency)\n    *   *Status:* 6 recent updates.\n    *   *Deadline:* Friday.\n\n#### **📅 Calendar Highlights**\n*   **10:00 AM – 10:45 AM:** Client Onboarding Sync\n*   **1:30 PM – 2:00 PM:** Weekly Team Standup\n*   *(Filtered out: 1 solo block and 1 declined event)*\n\n#### **🛠 Suggested Focus**\nTo hit your 5:00 PM deadline for Project Alpha, I recommend a deep work session this afternoon.\n*   **Action:** [Book a 90-minute Focus Block](https://calendar.google.com/calendar/r/eventedit?text=Deep+Work+Block&duration=90) (Suggested for 2:00 PM - 3:30 PM).",
+                  "thought": null,
+                  "thought_signature": "AY89a1_rLvF5xN8ceZNRSBQulqvlaFhrp910WeFU_uAi-RDQNvTAgJxGd-TFaiT04OUw5YYRUH5XXEsJljwj6O4ZF0YCBYOGB8uG35ZFUIem6LdGOkP0K6f1OsuHcE6VSi26ZS3xrrtdaiORiGy3WUX60nsC1XEh72orFlTPbhLc5Kcp99oy1m6iPSqaRYdq8Q4OtimVO-Jzzvs5qW4XSpYFzfONZzlL3XLmT9PmycEsVUGc0IUt1-0FhmEK1vDHFZOsrfOhEqC3d1OqtirsloJwERFRlzagbNBGAmf88Tt5uNbT4KG6-pzxiPNR2jMf8wHV3-x11RywT6p1LcmkpzIwU4pbEj-qSj1YI8HZVWy53PafXr9NBLOKyrsBqth15biFnU2oXWRuO79I3U9OwMdiLcAvSPfoWbfzAW2_",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-5b538205-41e3-40a7-860b-b8e35c3d3b12",
+                          "args": {
+                            "agent_name": "morning_coffee_agent"
+                          },
+                          "name": "transfer_to_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a1-WGqXvUtntAX1K7KZwanxjVUX71W5X-cz1rm_oRZ_tDkuCdOfB4NZQk4OxaYdXvi4nUwpHwyCx5WMQLQ8flKkdPkR5uVpz4ZyAjRpjBLd6yp5MEEcs3XTl9J10CTBgXVvN3vo6ewQcnOVtJTMCw7PkSczWqeZNMwuas6OB1IbnfJa6L4jytsKoWU2542OROuRN_y2ZTFxf3YL6L94gKs4ASdUj8zzg8QJO_KqEgBmu81zOxHhDodGRiD24Xx0dppsHJI21X0zZykjc2KtPGkyyt9WJ7HS1NdIzo14kP91k1VGf_Y82blLujijEBbDDYWWM5ukJpQQHGC5qcKVH27fQPpH_aifKDRdiyCU4IuI6Gx5joXHkume6oWr2Fhh9Ul1C0eUpRToHAmvhxq47AOyrO8S-33VQcVYvXGt9rptGQUw-mhWpUR_sgwxH3DXP-hK5Wu74lxi1TAROegV8FrCibn3GA65iDA-G-geJiMtx-Q-6Cl87ylOpOTM8GLfs1ZmkG6gHD5OwsjTk--9J8xRKT0rwdxydSbrfGeYzxl6HW15JCKb1NkOWvvmiQ8DmnmjfeFRfFQ0H-kld",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "root_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-5b538205-41e3-40a7-860b-b8e35c3d3b12",
+                          "name": "transfer_to_agent",
+                          "response": {
+                            "result": null
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "morning_coffee_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-89b5a727-19db-4810-b80c-09c217026c01",
+                          "args": {
+                            "query": "*"
+                          },
+                          "name": "search_recent_work",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a18uUUkbTTlDOq0QSOP6iiApe2Mf8sREi85sBIJT2x29mnZcD6U6F7DOO4FCYyVnFGCIhNqY_i5y2GSrsBJxkjo2DWPyFS2-kW1apDPVQrfweMtJKl83ebALPODp9kP1XGquNn0L_WvDZYfUgYVFYiroqUAE76t1e0ADOTKd82utCuKv3WNBUHh5fxBDgBBdsdDGY52JB_1f42H3Q5Yhp9oQd8FWnut8s6tpEY-IO3y_dUASIr5dSlUXfA_Y2fEsCRh-Y61_wolZ6I2FwqXGBBRRlPxR0Cd8ohan68WgYsFi68Y2MmMq1P0yA0_IlRG6vPdPXNv-QfutSVxnWh7fqjrf1CebnjZyn4i8mrFytwRx2cckEIkEHp4RIYMvfJZvsclIbCw8jRuZWGHIISWcIBUcRyRcAPzXCocXAreZDKXUPrFzr1IV3SUcyBIe1OoWWbDmgBe86uZFVxbby-w-lO4MI7-42Plo_Vav0lrYAJ5Pn79BW3vnU9SDpKhpMgYmaAU5PhHISexhxI14zmlG",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      },
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-7ba30625-ea32-4e98-9e75-e09c677cc6f0",
+                          "args": {
+                            "date_str": "2025-01-24"
+                          },
+                          "name": "get_calendar_events",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "morning_coffee_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-89b5a727-19db-4810-b80c-09c217026c01",
+                          "name": "search_recent_work",
+                          "response": {
+                            "status": "success",
+                            "projects": [
+                              {
+                                "project": "Project Alpha",
+                                "volume": 14,
+                                "urgency": "High",
+                                "deadline": "Today 5 PM"
+                              },
+                              {
+                                "project": "Portal Migration",
+                                "volume": 6,
+                                "urgency": "Medium",
+                                "deadline": "Friday"
+                              }
+                            ]
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      },
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-7ba30625-ea32-4e98-9e75-e09c677cc6f0",
+                          "name": "get_calendar_events",
+                          "response": {
+                            "status": "success",
+                            "date": "2025-01-24",
+                            "events": [
+                              {
+                                "id": "c1",
+                                "title": "Client Onboarding Sync",
+                                "time": "10:00-10:45",
+                                "status": "accepted"
+                              },
+                              {
+                                "id": "c2",
+                                "title": "Solo Focus Block",
+                                "time": "11:00-12:00",
+                                "status": "accepted",
+                                "is_solo": true
+                              },
+                              {
+                                "id": "c3",
+                                "title": "Weekly Team Standup",
+                                "time": "13:30-14:00",
+                                "status": "accepted"
+                              },
+                              {
+                                "id": "c4",
+                                "title": "Happy Hour Commute",
+                                "time": "17:00-18:00",
+                                "status": "declined"
+                              }
+                            ]
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "morning_coffee_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-319bd544-8309-430e-84d1-0e35186c2aa6",
+                          "args": {
+                            "duration_minutes": 90
+                          },
+                          "name": "schedule_focus_time",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "AY89a1_RIqZ6ZUp9rm739DspHovyBJsTviqcj9LHGTY0blYin8Kjm6bGCC5sl41GeeEOZkAbxzd8vdD8dSHEMlt0nnGPhJKn1QmpSLy7vwcE9dWUNXex2C7fHN7nwfw5hr0BQSXDxxJrsiR044Oco6fJHsxX-Y6X5MJDbe76fCiDZTg6nBNBdtBViqytTEl4512ekQG5J23xuwMyjwoIPwjDXvnpa5ThpImlgif_rzNrVuYhQd1ZPUwM5Gm2RTy7INjbb3-QBsezLUJ6zte-6WASoGLeY5OYBHfKC2T2RvryYKq_W4ksLUpXpsvY2m9YpqU3uwkZSklm_iLFehrvFUshrNmUm8B3FiUGUzycJ-LdNhVnyvNZyvzhQ8AznqMsFLHvbHu6vb8KiKimSPbS9UruhYFdNd9DARmniZ9z2l3Fg0BS87nYPnhoqT8QcBdAkB27-H5cr3lCSIS3UkJP0_rScNHV-8lNAZNvRUtOc3fNXSDGPN5BVRTe7KS26YDRG8fPsBtoz16xGMsss-el-n__j3A0PzlJWPzS13oQueCk3yNIe2TYZJAesujEj5Hj4RGX7rtVF6FSQhJG9cjDRGvHDIePkFePdhuxImg801mCAcK0Qi7YeyOblo9gcIxCdXP3wXM4qfWVxq-S9OFBotT6B7X29vIVqQvNKWllIWEQxj62PpDTRf6AYBC_b8jcaPAupAZbR_x3_YVcrTxg_a_IS9aLahCgVf9dmH1NZovEM3KxD9V95rZvGNQI3IWWBgjQJhze8zmlLWynXrvFt2IdeMCcZPc-L2PGOOyBDZuDMYpqBWrv9eunWW5AnkaRJY7YWX_X3aCT_QvEOV1s8SsQqNxPSmZYghV2lNXW4toPp7eBXbBtlU5IN1Sz5TtVSDwDkG37w5ZYQFsWN-Rqf2-xN2gRSs1ZGmKEs__rP1CzgCRmHn5XbbuhvR6tMyOEl0hHHZKCywQWn3wRVDi8WYdRdjRdF6j1YAQgMjMT086A_k923s2zoY8hitqymEVEtqsEKra3X7Gely5x7F53aZ5F64T7AUycvgIHRmG_LcOEjSix_J5LMi3B5g9gliOtkEwC5QuV_FBzqSY1XqtgllNROJhYonbyikNhOdWb4i12MDlC-5RqUhjTrqmgudlTP3lOw-htjBHO8hazWDq2zqNQW1WQ",
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "morning_coffee_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-319bd544-8309-430e-84d1-0e35186c2aa6",
+                          "name": "schedule_focus_time",
+                          "response": {
+                            "status": "success",
+                            "booked": true,
+                            "booking_url": "https://calendar.google.com/calendar/r/eventedit?text=Deep+Work+Block&duration=90"
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null,
+                        "tool_call": null,
+                        "tool_response": null,
+                        "part_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1781692023.4631813,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "root_agent": {
+                  "name": "root_agent",
+                  "instructions": "You coordinate the workday agent lifecycle. Route morning prep requests to morning_coffee_agent and afternoon reconciliation requests to afternoon_tea_agent.\n\nYou are an agent. Your internal name is \"root_agent\". The description about you is \"Workday reconciliation coordinator pairing Morning Coffee and Afternoon Tea moments.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: morning_coffee_agent\nAgent description: An early-morning planning agent that generates a scannable Daily Prep Brief from calendar events and recent work.\n\n\nAgent name: afternoon_tea_agent\nAgent description: A late-day action review agent that scans collaboration tools to surface unresolved work and unanswered follow-ups.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`afternoon_tea_agent`, `morning_coffee_agent`.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "morning_coffee_agent",
+                                  "afternoon_tea_agent"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "NULL"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                },
+                "morning_coffee_agent": {
+                  "name": "morning_coffee_agent",
+                  "instructions": "You are Morning Coffee, a daily prep agent designed to run at the start of the workday.\n1. Cluster recent work into top projects using search_recent_work.\n2. Filter out noisy calendar events (commute, solo blocks, declined meetings) using get_calendar_events.\n3. Classify free time and suggest focus blocks using schedule_focus_time.\n4. Output a concise, scannable Daily Prep Brief.\n\nYou are an agent. Your internal name is \"morning_coffee_agent\". The description about you is \"An early-morning planning agent that generates a scannable Daily Prep Brief from calendar events and recent work.\".\n\n\nYou have a list of other agents to transfer to:\n\n\nAgent name: root_agent\nAgent description: Workday reconciliation coordinator pairing Morning Coffee and Afternoon Tea moments.\n\n\nAgent name: afternoon_tea_agent\nAgent description: A late-day action review agent that scans collaboration tools to surface unresolved work and unanswered follow-ups.\n\n\nIf you are the best to answer the question according to your description,\nyou can answer it.\n\nIf another agent is better for answering the question according to its\ndescription, call `transfer_to_agent` function to transfer the question to that\nagent. When transferring, do not generate any text other than the function\ncall.\n\n**NOTE**: the only available agents for `transfer_to_agent` function are\n`afternoon_tea_agent`, `root_agent`.\n\nIf neither you nor the other agents are best for the question, transfer to your parent agent root_agent.\n",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "google_search": null,
+                      "google_maps": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "Transfer the question to another agent.\n\nThis tool hands off control to another agent when it's more suitable to\nanswer the user's question according to the agent's description.\n\nNote:\n  For most use cases, you should use TransferToAgentTool instead of this\n  function directly. TransferToAgentTool provides additional enum constraints\n  that prevent LLMs from hallucinating invalid agent names.\n\nArgs:\n  agent_name: the agent name to transfer to.\n",
+                          "name": "transfer_to_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "agent_name": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": [
+                                  "root_agent",
+                                  "afternoon_tea_agent"
+                                ],
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "agent_name"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "NULL"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Fetches today's calendar events for the user.\n\nArgs:\n    date_str: The date string in YYYY-MM-DD format.\n\nReturns:\n    A dictionary containing scheduled events for the requested date.\n",
+                          "name": "get_calendar_events",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "date_str": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "date_str"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Searches recent commits, emails, and active projects for the user.\n\nArgs:\n    query: Search term or project filter.\n\nReturns:\n    A dictionary containing clustered recent work items and project deadlines.\n",
+                          "name": "search_recent_work",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "query": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "query"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "Generates a Google Calendar booking link for suggested focus time.\n\nArgs:\n    duration_minutes: Duration of the focus block in minutes (e.g., 60).\n\nReturns:\n    A dictionary containing confirmation and the Google Calendar booking link.\n",
+                          "name": "schedule_focus_time",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "duration_minutes": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "INTEGER"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "duration_minutes"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_search_retrieval": null,
+                      "parallel_ai_search": null,
+                      "url_context": null,
+                      "mcp_servers": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "inv_morning",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Run my morning coffee prep brief.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": null,
+            "intermediate_data": null,
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "rubric_based_final_response_quality_v1",
+              "threshold": 0.8,
+              "criterion": {
+                "threshold": 0.8,
+                "judgeModelOptions": {
+                  "judgeModel": "gemini-3-flash-preview",
+                  "numSamples": 1
+                },
+                "rubrics": [
+                  {
+                    "rubricId": "relevance",
+                    "rubricContent": {
+                      "textProperty": "The response directly addresses the user's query."
+                    }
+                  },
+                  {
+                    "rubricId": "helpfulness",
+                    "rubricContent": {
+                      "textProperty": "The response is helpful and provides useful information."
+                    }
+                  }
+                ]
+              },
+              "custom_function_path": null,
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": [
+                  {
+                    "rubric_id": "relevance",
+                    "rationale": "The agent sequence correctly identified the intent, gathered the relevant data using the provided tools, and generated the requested \"prep brief.\"",
+                    "score": 1.0
+                  },
+                  {
+                    "rubric_id": "helpfulness",
+                    "rationale": "The response provides relevant, actionable information (deadlines, schedules, and a booking link) derived from the tool outputs to help the user prepare for their day.",
+                    "score": 1.0
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___0e7c882e-aa17-4610-ba4c-412173f2b7bf",
+      "session_details": {
+        "id": "___eval___session___0e7c882e-aa17-4610-ba4c-412173f2b7bf",
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {
+          "__llm_request_key__": "e425819c-d2ec-40ce-9795-97026d92eb56",
+          "morning_prep_brief": "### ☕ Daily Prep Brief - Jan 24\n\n#### **🎯 Top Priorities**\n*   **Project Alpha** (High Urgency)\n    *   *Status:* 14 recent updates.\n    *   *Deadline:* **Today, 5:00 PM.**\n*   **Portal Migration** (Medium Urgency)\n    *   *Status:* 6 recent updates.\n    *   *Deadline:* Friday.\n\n#### **📅 Calendar Highlights**\n*   **10:00 AM – 10:45 AM:** Client Onboarding Sync\n*   **1:30 PM – 2:00 PM:** Weekly Team Standup\n*   *(Filtered out: 1 solo block and 1 declined event)*\n\n#### **🛠 Suggested Focus**\nTo hit your 5:00 PM deadline for Project Alpha, I recommend a deep work session this afternoon.\n*   **Action:** [Book a 90-minute Focus Block](https://calendar.google.com/calendar/r/eventedit?text=Deep+Work+Block&duration=90) (Suggested for 2:00 PM - 3:30 PM)."
+        },
+        "events": [
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Run my morning coffee prep brief.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-de084e3a-d238-4c8c-a395-0cb1054b5c4e",
+            "author": "user",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "f7a86f3b-9b1e-41ef-9f6c-412e078c2488",
+            "timestamp": 1781692021.3919883
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-5b538205-41e3-40a7-860b-b8e35c3d3b12",
+                    "args": {
+                      "agent_name": "morning_coffee_agent"
+                    },
+                    "name": "transfer_to_agent",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a1-WGqXvUtntAX1K7KZwanxjVUX71W5X-cz1rm_oRZ_tDkuCdOfB4NZQk4OxaYdXvi4nUwpHwyCx5WMQLQ8flKkdPkR5uVpz4ZyAjRpjBLd6yp5MEEcs3XTl9J10CTBgXVvN3vo6ewQcnOVtJTMCw7PkSczWqeZNMwuas6OB1IbnfJa6L4jytsKoWU2542OROuRN_y2ZTFxf3YL6L94gKs4ASdUj8zzg8QJO_KqEgBmu81zOxHhDodGRiD24Xx0dppsHJI21X0zZykjc2KtPGkyyt9WJ7HS1NdIzo14kP91k1VGf_Y82blLujijEBbDDYWWM5ukJpQQHGC5qcKVH27fQPpH_aifKDRdiyCU4IuI6Gx5joXHkume6oWr2Fhh9Ul1C0eUpRToHAmvhxq47AOyrO8S-33VQcVYvXGt9rptGQUw-mhWpUR_sgwxH3DXP-hK5Wu74lxi1TAROegV8FrCibn3GA65iDA-G-geJiMtx-Q-6Cl87ylOpOTM8GLfs1ZmkG6gHD5OwsjTk--9J8xRKT0rwdxydSbrfGeYzxl6HW15JCKb1NkOWvvmiQ8DmnmjfeFRfFQ0H-kld",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "a1f38b77-aea0-4c9a-802c-3d1b62e5c7f7"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 24,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 24
+                }
+              ],
+              "prompt_token_count": 393,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 393
+                }
+              ],
+              "thoughts_token_count": 92,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 509,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-de084e3a-d238-4c8c-a395-0cb1054b5c4e",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "a1f38b77-aea0-4c9a-802c-3d1b62e5c7f7"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "49fdfaf6-e19b-4a63-bd17-cb2ffe34de8e",
+            "timestamp": 1781692021.4327126
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-5b538205-41e3-40a7-860b-b8e35c3d3b12",
+                    "name": "transfer_to_agent",
+                    "response": {
+                      "result": null
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-de084e3a-d238-4c8c-a395-0cb1054b5c4e",
+            "author": "root_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": "morning_coffee_agent",
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "265f244c-0141-4026-bb07-6cb4f0797ed9",
+            "timestamp": 1781692023.46349
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-89b5a727-19db-4810-b80c-09c217026c01",
+                    "args": {
+                      "query": "*"
+                    },
+                    "name": "search_recent_work",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a18uUUkbTTlDOq0QSOP6iiApe2Mf8sREi85sBIJT2x29mnZcD6U6F7DOO4FCYyVnFGCIhNqY_i5y2GSrsBJxkjo2DWPyFS2-kW1apDPVQrfweMtJKl83ebALPODp9kP1XGquNn0L_WvDZYfUgYVFYiroqUAE76t1e0ADOTKd82utCuKv3WNBUHh5fxBDgBBdsdDGY52JB_1f42H3Q5Yhp9oQd8FWnut8s6tpEY-IO3y_dUASIr5dSlUXfA_Y2fEsCRh-Y61_wolZ6I2FwqXGBBRRlPxR0Cd8ohan68WgYsFi68Y2MmMq1P0yA0_IlRG6vPdPXNv-QfutSVxnWh7fqjrf1CebnjZyn4i8mrFytwRx2cckEIkEHp4RIYMvfJZvsclIbCw8jRuZWGHIISWcIBUcRyRcAPzXCocXAreZDKXUPrFzr1IV3SUcyBIe1OoWWbDmgBe86uZFVxbby-w-lO4MI7-42Plo_Vav0lrYAJ5Pn79BW3vnU9SDpKhpMgYmaAU5PhHISexhxI14zmlG",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                },
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-7ba30625-ea32-4e98-9e75-e09c677cc6f0",
+                    "args": {
+                      "date_str": "2025-01-24"
+                    },
+                    "name": "get_calendar_events",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "242dd4af-fbb7-46f0-9774-d4087f503c7a"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 47,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 47
+                }
+              ],
+              "prompt_token_count": 751,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 751
+                }
+              ],
+              "thoughts_token_count": 100,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 898,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-de084e3a-d238-4c8c-a395-0cb1054b5c4e",
+            "author": "morning_coffee_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "242dd4af-fbb7-46f0-9774-d4087f503c7a"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "3d450655-a42e-4500-acad-830e31aede39",
+            "timestamp": 1781692023.467519
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-89b5a727-19db-4810-b80c-09c217026c01",
+                    "name": "search_recent_work",
+                    "response": {
+                      "status": "success",
+                      "projects": [
+                        {
+                          "project": "Project Alpha",
+                          "volume": 14,
+                          "urgency": "High",
+                          "deadline": "Today 5 PM"
+                        },
+                        {
+                          "project": "Portal Migration",
+                          "volume": 6,
+                          "urgency": "Medium",
+                          "deadline": "Friday"
+                        }
+                      ]
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                },
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-7ba30625-ea32-4e98-9e75-e09c677cc6f0",
+                    "name": "get_calendar_events",
+                    "response": {
+                      "status": "success",
+                      "date": "2025-01-24",
+                      "events": [
+                        {
+                          "id": "c1",
+                          "title": "Client Onboarding Sync",
+                          "time": "10:00-10:45",
+                          "status": "accepted"
+                        },
+                        {
+                          "id": "c2",
+                          "title": "Solo Focus Block",
+                          "time": "11:00-12:00",
+                          "status": "accepted",
+                          "is_solo": true
+                        },
+                        {
+                          "id": "c3",
+                          "title": "Weekly Team Standup",
+                          "time": "13:30-14:00",
+                          "status": "accepted"
+                        },
+                        {
+                          "id": "c4",
+                          "title": "Happy Hour Commute",
+                          "time": "17:00-18:00",
+                          "status": "declined"
+                        }
+                      ]
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-de084e3a-d238-4c8c-a395-0cb1054b5c4e",
+            "author": "morning_coffee_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "2dbea136-5f71-4114-9615-6eb7c5f13824",
+            "timestamp": 1781692025.64237
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": {
+                    "id": "adk-319bd544-8309-430e-84d1-0e35186c2aa6",
+                    "args": {
+                      "duration_minutes": 90
+                    },
+                    "name": "schedule_focus_time",
+                    "partial_args": null,
+                    "will_continue": null
+                  },
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": "AY89a1_RIqZ6ZUp9rm739DspHovyBJsTviqcj9LHGTY0blYin8Kjm6bGCC5sl41GeeEOZkAbxzd8vdD8dSHEMlt0nnGPhJKn1QmpSLy7vwcE9dWUNXex2C7fHN7nwfw5hr0BQSXDxxJrsiR044Oco6fJHsxX-Y6X5MJDbe76fCiDZTg6nBNBdtBViqytTEl4512ekQG5J23xuwMyjwoIPwjDXvnpa5ThpImlgif_rzNrVuYhQd1ZPUwM5Gm2RTy7INjbb3-QBsezLUJ6zte-6WASoGLeY5OYBHfKC2T2RvryYKq_W4ksLUpXpsvY2m9YpqU3uwkZSklm_iLFehrvFUshrNmUm8B3FiUGUzycJ-LdNhVnyvNZyvzhQ8AznqMsFLHvbHu6vb8KiKimSPbS9UruhYFdNd9DARmniZ9z2l3Fg0BS87nYPnhoqT8QcBdAkB27-H5cr3lCSIS3UkJP0_rScNHV-8lNAZNvRUtOc3fNXSDGPN5BVRTe7KS26YDRG8fPsBtoz16xGMsss-el-n__j3A0PzlJWPzS13oQueCk3yNIe2TYZJAesujEj5Hj4RGX7rtVF6FSQhJG9cjDRGvHDIePkFePdhuxImg801mCAcK0Qi7YeyOblo9gcIxCdXP3wXM4qfWVxq-S9OFBotT6B7X29vIVqQvNKWllIWEQxj62PpDTRf6AYBC_b8jcaPAupAZbR_x3_YVcrTxg_a_IS9aLahCgVf9dmH1NZovEM3KxD9V95rZvGNQI3IWWBgjQJhze8zmlLWynXrvFt2IdeMCcZPc-L2PGOOyBDZuDMYpqBWrv9eunWW5AnkaRJY7YWX_X3aCT_QvEOV1s8SsQqNxPSmZYghV2lNXW4toPp7eBXbBtlU5IN1Sz5TtVSDwDkG37w5ZYQFsWN-Rqf2-xN2gRSs1ZGmKEs__rP1CzgCRmHn5XbbuhvR6tMyOEl0hHHZKCywQWn3wRVDi8WYdRdjRdF6j1YAQgMjMT086A_k923s2zoY8hitqymEVEtqsEKra3X7Gely5x7F53aZ5F64T7AUycvgIHRmG_LcOEjSix_J5LMi3B5g9gliOtkEwC5QuV_FBzqSY1XqtgllNROJhYonbyikNhOdWb4i12MDlC-5RqUhjTrqmgudlTP3lOw-htjBHO8hazWDq2zqNQW1WQ",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "b50c3647-1c7d-4ee5-ab65-9d40c85929dc"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 19,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 19
+                }
+              ],
+              "prompt_token_count": 1035,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1035
+                }
+              ],
+              "thoughts_token_count": 292,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1346,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-de084e3a-d238-4c8c-a395-0cb1054b5c4e",
+            "author": "morning_coffee_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "b50c3647-1c7d-4ee5-ab65-9d40c85929dc"
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": [],
+            "branch": null,
+            "id": "10f51c09-0822-4fe1-a792-9d2debb96750",
+            "timestamp": 1781692025.6445825
+          },
+          {
+            "model_version": null,
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": {
+                    "will_continue": null,
+                    "scheduling": null,
+                    "parts": null,
+                    "id": "adk-319bd544-8309-430e-84d1-0e35186c2aa6",
+                    "name": "schedule_focus_time",
+                    "response": {
+                      "status": "success",
+                      "booked": true,
+                      "booking_url": "https://calendar.google.com/calendar/r/eventedit?text=Deep+Work+Block&duration=90"
+                    }
+                  },
+                  "inline_data": null,
+                  "text": null,
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": null,
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": null,
+            "usage_metadata": null,
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-de084e3a-d238-4c8c-a395-0cb1054b5c4e",
+            "author": "morning_coffee_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {},
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "2985bd29-a6f6-4ad1-8547-ce04ec9842b3",
+            "timestamp": 1781692028.1139712
+          },
+          {
+            "model_version": "gemini-3-flash-preview",
+            "content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "### ☕ Daily Prep Brief - Jan 24\n\n#### **🎯 Top Priorities**\n*   **Project Alpha** (High Urgency)\n    *   *Status:* 14 recent updates.\n    *   *Deadline:* **Today, 5:00 PM.**\n*   **Portal Migration** (Medium Urgency)\n    *   *Status:* 6 recent updates.\n    *   *Deadline:* Friday.\n\n#### **📅 Calendar Highlights**\n*   **10:00 AM – 10:45 AM:** Client Onboarding Sync\n*   **1:30 PM – 2:00 PM:** Weekly Team Standup\n*   *(Filtered out: 1 solo block and 1 declined event)*\n\n#### **🛠 Suggested Focus**\nTo hit your 5:00 PM deadline for Project Alpha, I recommend a deep work session this afternoon.\n*   **Action:** [Book a 90-minute Focus Block](https://calendar.google.com/calendar/r/eventedit?text=Deep+Work+Block&duration=90) (Suggested for 2:00 PM - 3:30 PM).",
+                  "thought": null,
+                  "thought_signature": "AY89a1_rLvF5xN8ceZNRSBQulqvlaFhrp910WeFU_uAi-RDQNvTAgJxGd-TFaiT04OUw5YYRUH5XXEsJljwj6O4ZF0YCBYOGB8uG35ZFUIem6LdGOkP0K6f1OsuHcE6VSi26ZS3xrrtdaiORiGy3WUX60nsC1XEh72orFlTPbhLc5Kcp99oy1m6iPSqaRYdq8Q4OtimVO-Jzzvs5qW4XSpYFzfONZzlL3XLmT9PmycEsVUGc0IUt1-0FhmEK1vDHFZOsrfOhEqC3d1OqtirsloJwERFRlzagbNBGAmf88Tt5uNbT4KG6-pzxiPNR2jMf8wHV3-x11RywT6p1LcmkpzIwU4pbEj-qSj1YI8HZVWy53PafXr9NBLOKyrsBqth15biFnU2oXWRuO79I3U9OwMdiLcAvSPfoWbfzAW2_",
+                  "video_metadata": null,
+                  "tool_call": null,
+                  "tool_response": null,
+                  "part_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "grounding_metadata": null,
+            "partial": null,
+            "turn_complete": null,
+            "turn_complete_reason": null,
+            "finish_reason": "STOP",
+            "error_code": null,
+            "error_message": null,
+            "interrupted": null,
+            "custom_metadata": {
+              "__llm_request_key__": "e425819c-d2ec-40ce-9795-97026d92eb56"
+            },
+            "usage_metadata": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 254,
+              "candidates_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 254
+                }
+              ],
+              "prompt_token_count": 1384,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 1384
+                }
+              ],
+              "thoughts_token_count": 72,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1710,
+              "traffic_type": "ON_DEMAND"
+            },
+            "live_session_resumption_update": null,
+            "live_session_id": null,
+            "go_away": null,
+            "input_transcription": null,
+            "output_transcription": null,
+            "avg_logprobs": null,
+            "logprobs_result": null,
+            "cache_metadata": null,
+            "citation_metadata": null,
+            "interaction_id": null,
+            "invocation_id": "e-de084e3a-d238-4c8c-a395-0cb1054b5c4e",
+            "author": "morning_coffee_agent",
+            "actions": {
+              "skip_summarization": null,
+              "state_delta": {
+                "__llm_request_key__": "e425819c-d2ec-40ce-9795-97026d92eb56",
+                "morning_prep_brief": "### ☕ Daily Prep Brief - Jan 24\n\n#### **🎯 Top Priorities**\n*   **Project Alpha** (High Urgency)\n    *   *Status:* 14 recent updates.\n    *   *Deadline:* **Today, 5:00 PM.**\n*   **Portal Migration** (Medium Urgency)\n    *   *Status:* 6 recent updates.\n    *   *Deadline:* Friday.\n\n#### **📅 Calendar Highlights**\n*   **10:00 AM – 10:45 AM:** Client Onboarding Sync\n*   **1:30 PM – 2:00 PM:** Weekly Team Standup\n*   *(Filtered out: 1 solo block and 1 declined event)*\n\n#### **🛠 Suggested Focus**\nTo hit your 5:00 PM deadline for Project Alpha, I recommend a deep work session this afternoon.\n*   **Action:** [Book a 90-minute Focus Block](https://calendar.google.com/calendar/r/eventedit?text=Deep+Work+Block&duration=90) (Suggested for 2:00 PM - 3:30 PM)."
+              },
+              "artifact_delta": {},
+              "transfer_to_agent": null,
+              "escalate": null,
+              "requested_auth_configs": {},
+              "requested_tool_confirmations": {},
+              "compaction": null,
+              "end_of_agent": null,
+              "agent_state": null,
+              "rewind_before_invocation_id": null,
+              "render_ui_widgets": null
+            },
+            "long_running_tool_ids": null,
+            "branch": null,
+            "id": "2103fa44-01e5-4c96-a487-2ed63346e993",
+            "timestamp": 1781692028.1160119
+          }
+        ],
+        "last_update_time": 1781692028.1160119
+      },
+      "user_id": "eval_user"
+    }
+  ],
+  "creation_timestamp": 1781692037.714998
+}

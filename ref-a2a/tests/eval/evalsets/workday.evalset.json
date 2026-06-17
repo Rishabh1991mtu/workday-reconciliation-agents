@@ -1,0 +1,39 @@
+{
+  "eval_set_id": "workday_eval",
+  "name": "Workday Reconciliation Evaluation",
+  "description": "Evaluates Morning Coffee planning and Afternoon Tea task reconciliation moments.",
+  "eval_cases": [
+    {
+      "eval_id": "morning_coffee_prep",
+      "conversation": [
+        {
+          "invocation_id": "inv_morning",
+          "user_content": {
+            "parts": [{"text": "Run my morning coffee prep brief."}]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "afternoon_tea_reconcile",
+      "conversation": [
+        {
+          "invocation_id": "inv_afternoon",
+          "user_content": {
+            "parts": [{"text": "Run my afternoon tea reconciliation report."}]
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "eval_user",
+        "state": {}
+      }
+    }
+  ]
+}
