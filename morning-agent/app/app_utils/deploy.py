@@ -374,7 +374,7 @@ def deploy_agent_engine_app(
         source_packages=source_packages_list,
         entrypoint_module=entrypoint_module,
         entrypoint_object=entrypoint_object,
-        class_methods=class_methods_list,
+        class_methods=class_methods_list, agent_framework="google-adk",
         env_vars=env_vars,
         service_account=service_account,
         requirements_file=requirements_file,
